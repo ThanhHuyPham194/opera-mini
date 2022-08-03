@@ -1,0 +1,50 @@
+@import "../../scss/import.scss";
+.text-stroke {
+  max-width: 430px;
+  margin-bottom: 82px;
+  &__group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+    // transition: all 1s;
+    p {
+      display: inline-block;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      text-transform: uppercase;
+      color: $primary-cl;
+      line-height: 65px;
+    }
+    .main {
+      opacity: 0.5;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $primary-cl;
+      -webkit-text-fill-color: transparent;
+      span {
+        display: block;
+      }
+    }
+    .sub {
+      transition: 0.4s all;
+      position: absolute;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      span {
+        display: block;
+      }
+    }
+  }
+  &__normal {
+    font-size: 48px;
+    font-family: "didot";
+    color: $primary-cl;
+    margin-bottom: 24px;
+  }
+  &__content {
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../scss/import.scss";
+.news {
+  padding-top: 80px;
+  padding-bottom: 180px;
+  background: url("../../../assets/images/news_bg.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &__wrapper {
+    margin-top: 270px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 124px;
+    position: relative;
+    .new-item:nth-child(2) {
+      margin-top: 40px;
+    }
+    .more {
+      position: absolute;
+      right: 0;
+      top: -190px;
+    }
+  }
+}

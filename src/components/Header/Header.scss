@@ -1,0 +1,154 @@
+@import "../../scss/import.scss";
+
+.header {
+  @include flexCenter(space-between);
+  background-color: transparent;
+  height: 120px;
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  a {
+    text-decoration: none;
+  }
+  &-left {
+    font-family: "gt" !important;
+    @include flexCenter(space-between);
+    gap: 10px;
+    cursor: pointer;
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+    }
+    span {
+      font-size: 20px;
+      color: $white-cl;
+      font-family: "Times New Roman", sans-serif;
+      position: relative;
+      &::before {
+        content: "Saigon Opera House";
+        position: absolute;
+        top: 0;
+        width: 0;
+        color: $primary-cl;
+        left: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        height: $text-small;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  &-center {
+    @include flexCenter(space-between);
+    gap: 54px;
+    a {
+      color: $white-cl;
+      font-size: $text-small;
+      position: relative;
+      padding-bottom: 5.5px;
+      &::before {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        width: 0;
+        color: $primary-cl;
+        left: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        height: $text-small;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0.8px;
+        bottom: 0;
+        right: 0;
+        top: 20px;
+        background-color: $primary-cl;
+        transition: 1.5s all;
+      }
+      &:hover::after {
+        left: 0;
+        width: 100%;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    .header-active {
+      color: $primary-cl;
+      border-bottom: 1px solid $primary-cl;
+    }
+  }
+  &-right {
+    &-search {
+      position: relative;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      input {
+        width: 200px;
+        height: 44px;
+        border: 1px solid $white-cl;
+        border-radius: 24px;
+        background-color: transparent;
+        padding-left: 40px;
+        font-size: $text-small;
+        color: $primary-cl;
+        font-weight: 500;
+        &:focus-visible,
+        &:valid {
+          outline: none;
+        }
+
+        &:focus + span,
+        &:valid + span {
+          color: $primary-cl;
+          transform: translateX(-50%) translateY(-50%);
+          left: 50%;
+          top: 0%;
+          background: transparent;
+          font-size: 12px;
+          border-left: 1px solid $primary-cl;
+          border-right: 1px solid $primary-cl;
+          letter-spacing: 1px;
+          padding: 0 5px !important;
+        }
+        &:focus,
+        &:valid {
+          border: 1px solid $primary-cl;
+          border-top: 0px !important;
+        }
+        &:focus ~ svg,
+        &:valid ~ svg {
+          * {
+            fill: $primary-cl;
+          }
+        }
+      }
+      span {
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        padding-left: 40px;
+        font-size: $text-small;
+        color: $white-cl;
+        transition: 0.5s;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        margin-left: 16px;
+      }
+    }
+  }
+}

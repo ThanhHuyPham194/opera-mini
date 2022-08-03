@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "didot";
+  src: url("./assets/fonts/Didot-HTF-M96-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Didot-HTF-M96-Medium.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "gt";
+  src: url("./assets/fonts/SVN-Gotham.woff2") format("woff2"),
+    url("./assets/fonts/SVN-Gotham.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "gtb";
+  src: url("./assets/fonts/SVN-GothamBold.woff2") format("woff2"),
+    url("./assets/fonts/SVN-GothamBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

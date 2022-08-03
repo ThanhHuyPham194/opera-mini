@@ -1,0 +1,18 @@
+@import '../../../scss/import.scss';
+.slider{
+  margin-top: -120px;
+  height: 100vh;
+  transform-origin: bottom;
+
+    .swiper{
+        position: relative;
+        height: inherit;
+    .swiper-button-prev{
+        display: none;
+        
+    }
+    .swiper-button-next{
+        display: none;      
+    }
+  }
+}

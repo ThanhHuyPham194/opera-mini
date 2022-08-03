@@ -1,0 +1,49 @@
+@import "../../../scss/import.scss";
+.history {
+  height: 900px;
+  padding-top: 100px;
+  //   min-height: 1024px;
+  background: url("../../../assets/images/history_bg.png") center center
+    no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    height: 800px;
+    .history__img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .img {
+        cursor: pointer;
+        opacity: 0;
+      }
+      .img:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:hover {
+          z-index: 1;
+        }
+      }
+      .img:nth-child(2) {
+        position: absolute;
+        top: 209px;
+        top: calc(50% - 24%);
+        left: -80%;
+        &:hover {
+          z-index: 1;
+        }
+      }
+      .img:nth-child(3) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        &:hover {
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../../scss/import.scss";
+.carousel {
+  background: url("../../../assets/images/carousel_bg.png") no-repeat center
+    center;
+  background-size: cover;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  position: relative;
+  background-attachment: fixed;
+  &__wrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    .button {
+      position: absolute;
+      right: 0;
+      top: -100px;
+    }
+    .bar {
+      position: relative;
+      width: 200px;
+      height: 2px;
+      @include leftCenter;
+      bottom: 0;
+      background-color: $primary-cl;
+      overflow: hidden;
+      z-index: 0;
+      &__sub {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1;
+        background-color: $grey-cl;
+      }
+      &__animation {
+        &.active {
+          display: block;
+        }
+        position: absolute;
+        display: none;
+        width: 50%;
+        height: 100%;
+        z-index: 1;
+        background-color: $grey-cl;
+        animation: fromRightMove 2s infinite
+          cubic-bezier(0.17, 0.67, 0.83, 0.67);
+      }
+    }
+    .carousel-flickity {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      outline: none;
+      padding-top: 8px;
+      .carousel-item {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+@keyframes fromRightMove {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}

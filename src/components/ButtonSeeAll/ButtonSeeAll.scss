@@ -1,0 +1,25 @@
+@import "../../scss/import.scss";
+.see-all {
+  cursor: pointer;
+
+  font-size: $text-small;
+  padding: 10px;
+  @include flexCenter(none);
+  p {
+    margin-right: 10px;
+    transition: all 0.8s;
+  }
+  &:hover p {
+    color: $primary-cl;
+    transform: rotate(360deg);
+  }
+  &:hover .line {
+    width: 80px;
+  }
+  .line {
+    width: 0;
+    height: 1px;
+    background-color: $primary-cl;
+    transition: all 0.8s;
+  }
+}
