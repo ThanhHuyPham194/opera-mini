@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90c2180d.css",
+    "main.js": "/static/js/main.1f415c7b.js",
+    "static/media/carousel8.jpg": "/static/media/carousel8.9a721e3509c306fe0703.jpg",
+    "static/media/carousel6.jpg": "/static/media/carousel6.980e3f9e10f5dfe78200.jpg",
+    "static/media/slider1.png": "/static/media/slider1.e6200353448cb98212ee.png",
+    "static/media/slider2.png": "/static/media/slider2.2a7af6ba15499592c19e.png",
+    "static/media/carousel7.jpg": "/static/media/carousel7.895236d763873b285e2f.jpg",
+    "static/media/about.png": "/static/media/about.434001fadfdaf3080822.png",
+    "static/media/partner_bg.png": "/static/media/partner_bg.a8746d0934a827170f31.png",
+    "static/media/about_bg.png": "/static/media/about_bg.f784816bee7b05b14c90.png",
+    "static/media/news_bg.png": "/static/media/news_bg.712952bbdbb410149fc1.png",
+    "static/media/history_bg.png": "/static/media/history_bg.746e7f1865394dadee41.png",
+    "static/media/carousel_bg.png": "/static/media/carousel_bg.11de65862964e0da90e6.png",
+    "static/media/history2.png": "/static/media/history2.f67fd345a080350b58f1.png",
+    "static/media/history3.png": "/static/media/history3.6da10ec7a99f002ffa7e.png",
+    "static/media/new1.png": "/static/media/new1.3b2717181e96c1f4158f.png",
+    "static/media/new2.png": "/static/media/new2.c877b639ac8def5d4230.png",
+    "static/media/history1.png": "/static/media/history1.43873fdfb8a176f35b87.png",
+    "static/media/carousel4.png": "/static/media/carousel4.5643aee757cfb5cf8904.png",
+    "static/media/carousel1.png": "/static/media/carousel1.707572e529f1c80d953b.png",
+    "static/media/carousel5.png": "/static/media/carousel5.2afc11155310994993db.png",
+    "static/media/carousel2.png": "/static/media/carousel2.0a0910d2b9fd1944b11b.png",
+    "static/media/carousel3.png": "/static/media/carousel3.ffabcedcc63c8d527974.png",
+    "static/media/SVN-GothamBold.woff": "/static/media/SVN-GothamBold.2abe8a6ccd00a50c1975.woff",
+    "static/media/SVN-GothamBold.woff2": "/static/media/SVN-GothamBold.8b6ae06c012afa81b390.woff2",
+    "static/media/SVN-Gotham.woff": "/static/media/SVN-Gotham.874a35f3772b0344113a.woff",
+    "static/media/logo.png": "/static/media/logo.ec8fa79f9600e988f63b.png",
+    "static/media/Didot-HTF-M96-Medium.woff2": "/static/media/Didot-HTF-M96-Medium.64a8b7c1872cd5c33d73.woff2",
+    "static/media/SVN-Gotham.woff2": "/static/media/SVN-Gotham.0c636a81c9bb08368e43.woff2",
+    "index.html": "/index.html",
+    "static/media/vector.svg": "/static/media/vector.db196953904e754eef7bcc93ae00c4ed.svg",
+    "static/media/arrow.svg": "/static/media/arrow.49ad8ba472da53d12085c4085dc7f11f.svg",
+    "main.90c2180d.css.map": "/static/css/main.90c2180d.css.map",
+    "main.1f415c7b.js.map": "/static/js/main.1f415c7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90c2180d.css",
+    "static/js/main.1f415c7b.js"
+  ]
+}
